@@ -6,6 +6,8 @@ import { useState } from "react";
 // useState c'est pour le change de state comme React
 
 import Button from "./button";
+// import du composant Button
+
 import { useRouter } from "next/navigation";
 /*
     useRouter c'est pour la navigation entre les pages avec Next.js
@@ -27,14 +29,14 @@ export default function MyFisrtComponent() {
 
     return (
         <>
-            <ul className="flex flex-col gap-10">
+            <ul className="flex flex-col gap-10 border border-red-300 p-10">
                 <li>Je</li>
                 <li>Suis</li>
                 <li>Un</li>
                 <li>Composant</li>
                 <li></li>
-                <Button onClick={handleClick} name="Cliquez-moi" />
-                <p>{count}</p>
+                <Button onClick={handleClick} name="Clique ici !" />
+                <p>Compteur : {count}</p>
                 <Button onClick={handleRedirection} name="redirection" />
             </ul>
             <p>le bouton est lui aussi un composant !</p>
